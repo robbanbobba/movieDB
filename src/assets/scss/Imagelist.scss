@@ -1,0 +1,101 @@
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+
+#imageList {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90vw;
+}
+
+.character-card {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.card-image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover; 
+}
+
+.card-text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .character-card {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    .character-card {
+        width: 35vw;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    .character-card {
+        width: 25vw;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .character-card {
+        width: 22vw;
+    }
+}
+
+// #imageList {
+//     display: flex;
+//     justify-items: center;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//     flex-direction:row;
+//     width: 90vw;
+// }
+
+// #imageList > .list-group-item {
+//     width: 20vw
+// }
+
+
+// @media screen and (max-width: 500px) {
+//     #imageList > .list-group-item {
+//         width: 70vw;
+        
+//     }
+//   }
+
+//   @media screen and (min-width: 501px) and (max-width: 800px) {
+//     #imageList > .list-group-item {
+//         width: 35vw
+//     }
+//   }
+
+//   @media screen and (min-width: 801px) and (max-width: 1000px) {
+//     #imageList > .list-group-item {
+//         width: 25vw
+//     }
+//   }
+
+//   @media screen and (min-width: 801px) and (max-width: 1000px) {
+//     #imageList > .list-group-item {
+//         width: 22vw
+//     }
+//   }
